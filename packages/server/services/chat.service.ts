@@ -22,7 +22,7 @@ export const chatService = {
       model: 'gpt-4o-mini',
       input: prompt,
       temperature: 0.2, // less creative
-      max_output_tokens: 100, // limit response length
+      max_output_tokens: 200, // limit response length
       previous_response_id:
         conversationRepository.getLastResponseId(conversationId), // maintain context if available
     });
